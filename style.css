@@ -1,0 +1,122 @@
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+header a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+/* CONTAINER */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 0px 0px;
+    grid-template-areas:
+        "contacto"
+        "perdidos"
+        "encontrados"
+        "adopcion";
+}
+
+a {
+    padding: 5px;
+}
+
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ARTICULOS */
+
+.contacto {
+    grid-area: contacto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#perdidos {
+    grid-area: perdidos;
+}
+
+
+#encontrados {
+    grid-area: encontrados;
+}
+
+
+#adopcion {
+    grid-area: adopcion;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+
+article {
+    margin-bottom: 20px;
+}
+
+
+
+
+.mainArticle {
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;     */
+
+}
+
+.card {
+    width: 100%;
+    /* min-height: 400px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color: aliceblue;
+    }
+
+    .mainArticle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 18rem;
+    }
+}
